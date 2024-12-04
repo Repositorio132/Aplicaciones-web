@@ -1,0 +1,91 @@
+/* estilos.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    color: #e67e22; /* Tono naranja */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #e67e22; /* Tono naranja */
+    outline: none;
+}
+
+button.register-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e67e22; /* Tono naranja */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.register-btn:hover {
+    background-color: #d35400; /* Tono naranja oscuro */
+}
+
+p {
+    margin-top: 20px;
+    color: #666;
+}
+
+a.toggle-btn {
+    color: #e67e22; /* Tono naranja */
+    text-decoration: none;
+}
+
+a.toggle-btn:hover {
+    text-decoration: underline;
+}
+
+.message {
+    padding: 15px;
+    border: 1px solid #4caf50;
+    background-color: #dff0d8;
+    color: #3c763d;
+    border-radius: 5px;
+    margin-top: 15px;
+}

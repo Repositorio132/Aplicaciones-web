@@ -1,0 +1,268 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e67e22; /* Naranja personalizado */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+main {
+    display: flex; /* Activa el modo flexbox */
+    flex-direction: column; /* Alinea elementos en columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Tamaño máximo del contenido */
+    width: 100%;
+}
+
+
+/* Sección del perfil */
+section {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Tamaño máximo de los cuadros */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Títulos de las secciones */
+section h2 {
+    font-size: 22px;
+    color: #e67e22; /* Naranja personalizado para los títulos */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Información del cursante */
+section p {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+strong {
+    color: #555;
+}
+
+/* Tabla de cursos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead {
+    background-color: #e67e22; /* Naranja personalizado para el encabezado */
+    color: white;
+    font-size: 14px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table td {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Botón de actualización */
+.button {
+    background-color: #e67e22; /* Naranja personalizado para el botón */
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #d35400; /* Naranja más oscuro en hover */
+}
+
+/* Estilo para la alerta de no cursos */
+p {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Estilo para tablas en pantallas pequeñas */
+table td, table th {
+    font-size: 12px;
+    padding: 8px;
+}
+
+/* Adaptabilidad en dispositivos móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    section p {
+        font-size: 12px;
+    }
+
+    table td, table th {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+/* Estilo para pantallas más pequeñas */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Espacio entre el botón y el logo */
+    padding: 15px;
+    background-color: #e67e22;  /* Marco naranja */
+    color: white;
+    position: fixed;  /* Se queda fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;  /* Asegura que el encabezado quede por encima del contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadido para mejorar el efecto visual */
+}
+
+/* Botón del menú lateral */
+.open-btn {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Logo */
+.logo {
+    height: 80px;  /* Ajusta la altura de la imagen */
+    width: auto;    /* Mantiene la proporción de la imagen */
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: 0.3s;
+    padding-top: 20px;
+    z-index: 10;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #e67e22;
+}
+
+.sidebar i {
+    margin-right: 15px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #ecf0f1;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilo de los formularios */
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;  /* Asegura que el formulario esté debajo del encabezado */
+    position: relative; /* Se asegura de que el formulario no se mueva fuera de su contenedor */
+}

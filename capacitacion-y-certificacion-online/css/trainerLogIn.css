@@ -1,0 +1,114 @@
+/* registrarTrainer.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+}
+
+h2 {
+    color: #e67e22; /* Tono naranja */
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #777;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 15px;
+    color: #333;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    background-color: #e9ecef;
+    border-color: #e67e22;
+    outline: none;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+    padding: 12px;
+    background-color: #e67e22; /* Tono naranja */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #d35400; /* Tono naranja oscuro */
+    transform: scale(1.02);
+}
+
+button[type="submit"]:active {
+    transform: scale(1);
+}
+
+.success-message {
+    color: #28a745;
+    background-color: #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #d9534f;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder {
+    color: #888;
+}

@@ -1,0 +1,144 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #4a4a4a;
+}
+
+/* Contenedor principal */
+section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    margin: 20px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Títulos */
+h2 {
+    color: #e67e22;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 18px;
+    font-size: 15px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #e67e22;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fdfdfd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+tbody tr:hover {
+    background-color: #f7e6d7;
+}
+
+tbody td {
+    color: #4a4a4a;
+}
+
+/* Botón de inscripción */
+button {
+    padding: 10px 16px;
+    background-color: #e67e22;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #d35400;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Enlaces */
+a.toggle-btn {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+a.toggle-btn:hover {
+    color: #d35400;
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    table, th, td {
+        font-size: 13px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
