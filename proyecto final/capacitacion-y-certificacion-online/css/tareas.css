@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2, h3 {
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Yellow background for sections, centered */
+section {
+    background-color: #fff9c4; /* Soft yellow */
+    padding: 10px; /* Reduced padding */
+    margin: 15px auto; /* Center section */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    max-width: 500px; /* Limit the max width for better centering */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+textarea,
+select {
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #ff6600;
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    padding: 6px 10px; /* Smaller buttons */
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: fit-content;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Section and Buttons */
+@media (max-width: 768px) {
+    section {
+        padding: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        width: 90%; /* Adjust for small screens */
+    }
+
+    button {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+/* Task List Styling */
+.tasks-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px; /* Smaller padding for tasks */
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.task:hover {
+    background-color: #fdf4e3;
+}
+
+.available {
+    background-color: #e0ffe0; /* Light green for available tasks */
+}
+
+/* Quiz Questions Container Styling */
+#quiz-questions-container .quiz-question {
+    padding: 8px; /* Reduced padding for quiz questions */
+    margin-bottom: 8px;
+    border: 1px solid #ff6600;
+    border-radius: 6px;
+    background-color: #fff3e0;
+    text-align: center;
+}
+
+#quiz-questions-container input[type="text"] {
+    width: calc(100% - 16px);
+    margin-bottom: 5px;
+}
